@@ -2,7 +2,7 @@ LOG_LEVEL ?= spin=trace
 CERT_NAME ?= local
 SPIN_DOC_NAME ?= new-doc.md
 
-ARCH = uname -p
+ARCH = `uname -p`
 ## dependencies for e2e-tests
 E2E_VOLUME_MOUNT     ?=
 E2E_BUILD_SPIN       ?= false
