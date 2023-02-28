@@ -1,0 +1,9 @@
+name: Display arch info
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  print-details:
+    steps:
+      - run: uname -p
