@@ -53,7 +53,7 @@ test-fermyon-platform:
 .PHONY: test-spin-up
 test-spin-up:
 	# docker build -t spin-e2e-tests --build-arg BUILD_SPIN=$(E2E_BUILD_SPIN) -f $(E2E_TESTS_DOCKERFILE) .
-	echo $(ARCH)
+	echo $(ARCH) && echo $(E2E_TESTS_DOCKERFILE)
 
 .PHONY: test-outbound-redis
 test-outbound-redis:
