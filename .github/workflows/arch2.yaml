@@ -68,6 +68,6 @@ jobs:
 
       - name: Copy Binary to S3 - ${{ env.RELEASE_VERSION }}
         #if: ${{ (runner.os == 'Linux') && (matrix.config.arch == 'amd64')  && (github.repository_owner == 'rajatjindal') }}
-        if: runner.os == 'Linux' && matrix.config.arch == 'amd64'  && github.repository_owner == 'fermyon'
+        if: runner.os == 'Linux' && matrix.config.arch == 'amd64'  && github.repository_owner == 'rajatjindal'
         run: |
           echo "called ${{ runner.os }} - ${{ matrix.config.arch }} ${{ github.repository_owner }}"
